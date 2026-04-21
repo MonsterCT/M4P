@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101012" />
+    <meta
+      name="description"
+      content="A private Song of the Day PWA with locked music levels, notes, reflections, and reminders."
+    />
+    <title>M4P (Music for Patata)</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icon-192.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">M4P (Music for Patata)</p>
+          <h1>Song of the Day</h1>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" id="install-button" type="button" aria-label="Install app" title="Install app" hidden>
+            <span aria-hidden="true">+</span>
+          </button>
+          <button class="icon-button" id="settings-button" type="button" aria-label="Open settings" title="Settings">
+            <span aria-hidden="true">⚙</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-grid">
+          <article class="quest-panel" aria-live="polite">
+            <div class="quest-header">
+              <div>
+                <p class="eyebrow" id="quest-date">Today</p>
+                <h2 id="quest-title">Loading the mixtape...</h2>
+              </div>
+              <div class="level-badge" id="level-badge">LVL 001</div>
+            </div>
+
+            <div class="note-stage" id="note-stage">
+              <p class="stage-label">Before the song</p>
+              <p id="love-note">A little sentence will appear here before the reveal.</p>
+            </div>
+
+            <div class="reveal-stage" id="reveal-stage" hidden>
+              <div class="album-art-frame" aria-hidden="true">
+                <img id="album-artwork" alt="" />
+                <div class="album-art-fallback" id="album-art-fallback">
+                  <span>MP</span>
+                </div>
+              </div>
+              <div class="song-copy">
+                <p class="stage-label">Now playing</p>
+                <h3 id="song-name">Mystery song</h3>
+                <p id="song-artist">Hidden artist</p>
+                <p class="song-album" id="song-album"></p>
+                <p class="song-genre" id="song-genre">Music</p>
+                <a class="soundcloud-link" id="soundcloud-link" href="#" target="_blank" rel="noreferrer">
+                  Open on SoundCloud
+                </a>
+              </div>
+            </div>
+
+            <div class="quest-actions">
+              <button class="primary-button" id="reveal-button" type="button">Reveal Song of the Day</button>
+              <button class="ghost-button" id="listen-button" type="button" hidden>I listened</button>
+            </div>
+
+            <form class="reflection-form" id="reflection-form" hidden>
+              <label for="reflection-input">What did this one make you think or feel?</label>
+              <textarea
+                id="reflection-input"
+                name="reflection"
+                rows="5"
+                minlength="2"
+                placeholder="Write a tiny thought, a rating, a memory, a complaint, anything..."
+                required
+              ></textarea>
+              <div class="form-row">
+                <p id="reflection-helper">You need to write something to complete today's level.</p>
+                <button class="primary-button" type="submit">Save memory</button>
+              </div>
+            </form>
+          </article>
+
+          <aside class="stats-panel">
+            <div class="progress-ring" aria-label="Mixtape progress">
+              <svg viewBox="0 0 120 120" role="img">
+                <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+                <circle class="ring-fill" id="ring-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <div>
+                <strong id="progress-percent">0%</strong>
+                <span>complete</span>
+              </div>
+            </div>
+
+            <dl class="stats-list">
+              <div>
+                <dt>Unlocked</dt>
+                <dd id="unlocked-count">0</dd>
+              </div>
+              <div>
+                <dt>Remaining</dt>
+                <dd id="remaining-count">0</dd>
+              </div>
+              <div>
+                <dt>Streak</dt>
+                <dd id="streak-count">0</dd>
+              </div>
+              <div>
+                <dt>Finale</dt>
+                <dd id="finale-date">Not set</dd>
+              </div>
+            </dl>
+
+            <div class="reminder-box" id="reminder-box">
+              <div>
+                <p class="stage-label">Reminder mode</p>
+                <p id="reminder-status">Notifications are off.</p>
+              </div>
+              <button class="ghost-button" id="notification-button" type="button">Enable</button>
+            </div>
+          </aside>
+        </section>
+
+        <section class="tabs" aria-label="Mixtape views">
+          <div class="tab-list" role="tablist">
+            <button class="tab-button is-active" type="button" data-tab="map">Level map</button>
+            <button class="tab-button" type="button" data-tab="archive">Unlocked</button>
+            <button class="tab-button" type="button" data-tab="memories">Memories</button>
+          </div>
+
+          <div class="tab-panel is-active" id="tab-map">
+            <div class="level-grid" id="level-grid" aria-label="All song levels"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-archive">
+            <div class="archive-list" id="archive-list"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-memories">
+            <div class="memory-list" id="memory-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="settings-dialog" id="settings-dialog">
+      <form method="dialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">Mixtape controls</p>
+            <h2>Settings</h2>
+          </div>
+          <button class="icon-button" value="close" aria-label="Close settings" title="Close">×</button>
+        </div>
+      </form>
+
+      <div class="settings-grid">
+        <section>
+          <h3>Launch plan</h3>
+          <p>Change these if you release later, shorten the mixtape, or add more levels.</p>
+          <div class="settings-fields">
+            <label>
+              Release date
+              <input id="start-date-input" type="date" />
+            </label>
+            <label>
+              Total levels
+              <input id="total-days-input" type="number" min="1" max="999" step="1" />
+            </label>
+          </div>
+          <button class="primary-button" id="save-schedule-button" type="button">Save launch plan</button>
+        </section>
+
+        <section>
+          <h3>Song data</h3>
+          <p>
+            Replace the sample songs by editing <code>data/songs.js</code>, or import a JSON/CSV file here.
+            CSV columns: <code>day,title,artist,url,note</code>. You can use <code>date</code> instead of
+            <code>day</code> if the launch date is already fixed.
+          </p>
+          <label class="file-picker">
+            <input id="import-file" type="file" accept=".json,.csv,application/json,text/csv" />
+            Import songs
+          </label>
+          <button class="ghost-button" id="export-button" type="button">Export songs</button>
+          <button class="ghost-button danger" id="reset-data-button" type="button">Reset imported songs</button>
+        </section>
+
+        <section>
+          <h3>Test progress</h3>
+          <p>
+            Reveals and reflections are saved in this browser while you test. Clear them right before release so
+            she starts fresh.
+          </p>
+          <label class="file-picker">
+            <input id="import-progress-file" type="file" accept=".json,application/json" />
+            Import progress
+          </label>
+          <button class="ghost-button" id="export-progress-button" type="button">Export progress</button>
+          <button class="ghost-button danger" id="reset-progress-button" type="button">Clear test progress</button>
+        </section>
+
+        <section>
+          <h3>Reminder limits</h3>
+          <p>
+            The app asks once per hour between 08:00 and 22:00 when a level is unfinished. Closed-app
+            background notifications depend on the browser and OS.
+          </p>
+          <label class="toggle-row">
+            <input id="sound-toggle" type="checkbox" checked />
+            Play a tiny alert sound while the app is open
+          </label>
+        </section>
+      </div>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
