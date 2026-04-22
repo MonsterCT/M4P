@@ -264,13 +264,13 @@ export const SONGS = [
   },
   {
     "day": 27,
-    "title": "Empire Ants feat. Little Dragon",
-    "artist": "Gorillaz",
-    "url": "https://soundcloud.com/search?q=Gorillaz%20Empire%20Ants%20feat.%20Little%20Dragon",
-    "note": "Day 27 of 392: A bright first stretch to make the ritual feel effortless.",
-    "genre": "Psychedelic",
-    "album": "Sweat Selects: Mazy (DJ Mix)",
-    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f7/bf/9e/f7bf9edb-0458-c523-fb7f-6cbc38ffcd82/bf7e59bb-1104-4cab-9201-da4b06fee4f5.jpg/600x600bb.jpg"
+    "title": "Stand By Me",
+    "artist": "Ben E. King",
+    "url": "https://soundcloud.com/search?q=Ben%20E.%20King%20Stand%20By%20Me",
+    "note": "Day 27 of 392: Our anniversary song, repeated here because Stand By Me deserves to appear twice in the journey.",
+    "genre": "Soul",
+    "album": "",
+    "artworkUrl": ""
   },
   {
     "day": 28,
@@ -3918,7 +3918,7 @@ export const SONGS = [
     "artist": "Ben E. King",
     "url": "https://soundcloud.com/search?q=Ben%20E.%20King%20Stand%20By%20Me",
     "note": "Day 392 of 392: The warm final stretch, closer and more personal.",
-    "genre": "Music",
+    "genre": "Soul",
     "album": "",
     "artworkUrl": ""
   }
