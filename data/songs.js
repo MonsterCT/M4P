@@ -17,7 +17,7 @@ export const SONGS = [
     "title": "Feel Good Inc.",
     "artist": "Gorillaz & De La Soul",
     "url": "https://soundcloud.com/search?q=Gorillaz%20%26%20De%20La%20Soul%20Feel%20Good%20Inc.",
-    "note": "Day 2 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "A weird song by a weird band. Look up Gorillaz, very particular. The song has an intriguing meaning and the chorus just stays stuck in my head for hours.",
     "genre": "Alternative",
     "album": "Demon Days",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1c/0f/81/1c0f818a-e458-dd84-6f1b-ccbdf5fe14d6/825646291045.jpg/600x600bb.jpg"
