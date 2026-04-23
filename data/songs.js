@@ -27,7 +27,7 @@ export const SONGS = [
     "title": "Redbone",
     "artist": "Childish Gambino",
     "url": "https://soundcloud.com/search?q=Childish%20Gambino%20Redbone",
-    "note": "Day 3 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "Redbone is unique to R&B and one of my favorite songs of the genre. It is slow, it has groove, the beat talks to you. Hello my Daylight, Muah.",
     "genre": "R&B/Soul",
     "album": "Jaguar Deejay: welcome to the aprtment (DJ Mix)",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/b5/6d/60b56d6e-be3e-fd6c-32df-62ed9fa44c6a/1a2284a9-39d0-4db5-a511-457834a732be.jpg/600x600bb.jpg"
