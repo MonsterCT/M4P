@@ -37,7 +37,7 @@ export const SONGS = [
     "title": "Leave The Door Open",
     "artist": "Silk Sonic",
     "url": "https://soundcloud.com/search?q=Silk%20Sonic%20Leave%20The%20Door%20Open",
-    "note": "Day 4 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "We have listened to this song plenty ;)",
     "genre": "R&B/Soul",
     "album": "An Evening With Silk Sonic",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/33/dc/c533dc8e-2baa-94f9-22be-e6e28945f932/075679754134.jpg/600x600bb.jpg"
