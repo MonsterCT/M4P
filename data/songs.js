@@ -47,7 +47,7 @@ export const SONGS = [
     "title": "Bohemian Rhapsody",
     "artist": "Queen",
     "url": "https://soundcloud.com/search?q=Queen%20Bohemian%20Rhapsody",
-    "note": "Day 5 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "not much to say is there?",
     "genre": "Rock",
     "album": "Greatest Hits I, II & III: The Platinum Collection",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4d/08/2a/4d082a9e-7898-1aa1-a02f-339810058d9e/14DMGIM05632.rgb.jpg/600x600bb.jpg"
