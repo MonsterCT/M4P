@@ -57,7 +57,7 @@ export const SONGS = [
     "title": "Smooth Criminal",
     "artist": "Michael Jackson",
     "url": "https://soundcloud.com/search?q=Michael%20Jackson%20Smooth%20Criminal",
-    "note": "Day 6 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "The King of Pop",
     "genre": "Pop",
     "album": "The Essential Michael Jackson",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3d/9d/38/3d9d3811-71f0-3a0e-1ada-3004e56ff852/827969428726.jpg/600x600bb.jpg"
