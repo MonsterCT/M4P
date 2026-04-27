@@ -67,7 +67,7 @@ export const SONGS = [
     "title": "No Woman, No Cry",
     "artist": "Bob Marley & The Wailers",
     "url": "https://soundcloud.com/search?q=Bob%20Marley%20%26%20The%20Wailers%20No%20Woman%2C%20No%20Cry",
-    "note": "Day 7 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "A beautiful song and a message of hope for the people of Jamaica",
     "genre": "Reggae",
     "album": "Legend: The Best of Bob Marley and the Wailers (Deluxe Edition)",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/15/0b/db/150bdba3-8dbb-8e66-79b3-c8e1dead908b/20UMGIM03868.rgb.jpg/600x600bb.jpg"
