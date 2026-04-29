@@ -87,7 +87,7 @@ export const SONGS = [
     "title": "Get Lucky",
     "artist": "Daft Punk feat. Pharrell & Nile Rodgers",
     "url": "https://soundcloud.com/search?q=Daft%20Punk%20feat.%20Pharrell%20%26%20Nile%20Rodgers%20Get%20Lucky",
-    "note": "Day 9 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "I got more than lucky my star",
     "genre": "Pop",
     "album": "Get Lucky (feat. Pharrell Williams & Nile Rodgers) [Daft Punk Remix]",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ba/58/0c/ba580cb1-a7e2-4771-e1a9-244f32ba15a4/886444079006.jpg/600x600bb.jpg"
