@@ -1,4 +1,4 @@
-const CACHE_NAME = "m4p-cache-v24";
+const CACHE_NAME = "m4p-cache-v25";
 const APP_SHELL = [
   "./",
   "./index.html",

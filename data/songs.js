@@ -77,7 +77,7 @@ export const SONGS = [
     "title": "A Man I’ll Never Be",
     "artist": "Boston",
     "url": "https://soundcloud.com/search?q=Boston%20A%20Man%20I%E2%80%99ll%20Never%20Be",
-    "note": "Day 8 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "This is the lesser known rock from the 80s, it is beautiful, I used to listen to it constantly a few years back.",
     "genre": "Rock",
     "album": "Don't Look Back",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1d/5f/81/1d5f8115-915e-4dde-814f-b22c2e5b97fe/mzi.qlxhqbnd.jpg/600x600bb.jpg"
