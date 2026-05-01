@@ -107,7 +107,7 @@ export const SONGS = [
     "title": "I Wish You Were Here",
     "artist": "Al Green",
     "url": "https://soundcloud.com/search?q=Al%20Green%20I%20Wish%20You%20Were%20Here",
-    "note": "Day 11 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "I really wish you were here with me, or for me to be there with you",
     "genre": "R&B/Soul",
     "album": "Al Green Is Love",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/33/9c/32/339c3286-4a49-a146-e17a-32e91cc8a023/886446395760.jpg/600x600bb.jpg"
