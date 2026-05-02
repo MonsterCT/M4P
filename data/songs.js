@@ -117,7 +117,7 @@ export const SONGS = [
     "title": "Hello you",
     "artist": "Arctic Monkeys",
     "url": "https://soundcloud.com/search?q=Arctic%20Monkeys%20Hello%20you",
-    "note": "Day 12 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "Hello little star, this is one of Arctic Monkeys' lesser known albums and in my opinion a few of the songs are beautifully emotional and intricate; just like you. Muah",
     "genre": "Alternative",
     "album": "The Car",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0f/03/0f/0f030fb9-a529-dba5-4e9d-4fbf2ed25037/887828045563.png/600x600bb.jpg"
