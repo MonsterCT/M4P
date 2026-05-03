@@ -127,7 +127,7 @@ export const SONGS = [
     "title": "Smokin Out The Window",
     "artist": "Silk Sonic",
     "url": "https://soundcloud.com/search?q=Silk%20Sonic%20Smokin%20Out%20The%20Window",
-    "note": "Day 13 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "You know the album, soon we'll be playing it together baby",
     "genre": "R&B/Soul",
     "album": "An Evening with Silk Sonic",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/600x600bb.jpg"
