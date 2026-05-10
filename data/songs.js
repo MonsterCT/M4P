@@ -197,7 +197,7 @@ export const SONGS = [
     "title": "A$AP Rocky",
     "artist": "Jukebox Joints",
     "url": "https://soundcloud.com/search?q=Jukebox%20Joints%20A%24AP%20Rocky",
-    "note": "Day 20 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "This is one of A$AP's best albums and one of the most interesting songs. More power to you my lovely one",
     "genre": "Hip-Hop/Rap",
     "album": "To ziomal",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/e2/a7/07e2a742-e921-4b79-a37e-40f8299a7ca8/25UMGIM86845.rgb.jpg/600x600bb.jpg"
