@@ -207,7 +207,7 @@ export const SONGS = [
     "title": "Back to Black",
     "artist": "Amy Winehouse",
     "url": "https://soundcloud.com/search?q=Amy%20Winehouse%20Back%20to%20Black",
-    "note": "Day 21 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "Another classic by another master, I would like to watch the movie about her life with you...",
     "genre": "R&B/Soul",
     "album": "Back To Black (Remixes & B Sides) - EP",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/cd/6c/11/cd6c11b3-6300-0a29-d211-855847ed2c8c/00602547505040.rgb.jpg/600x600bb.jpg"
