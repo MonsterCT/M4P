@@ -217,7 +217,7 @@ export const SONGS = [
     "title": "Feels Like We Only Go Backwards",
     "artist": "Tame Impala",
     "url": "https://soundcloud.com/search?q=Tame%20Impala%20Feels%20Like%20We%20Only%20Go%20Backwards",
-    "note": "Day 22 of 392: A bright first stretch to make the ritual feel effortless.",
+    "note": "it was playing in Combo yesterday, a very nostalgic song",
     "genre": "Rock",
     "album": "Lonerism",
     "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b7/40/9b/b7409bc6-24fa-b956-5613-4be8dc62be06/12UMGIM64219.rgb.jpg/600x600bb.jpg"
